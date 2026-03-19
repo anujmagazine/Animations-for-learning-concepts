@@ -1,0 +1,37 @@
+# How OpenClaw Works — Animated Explainer
+
+A clean, animated, mobile-responsive HTML explainer that breaks down [OpenClaw](https://openclaw.ai/) — the open-source AI agent platform — into six digestible sections.
+
+![OpenClaw Explainer Animation](openclaw_explainer.gif)
+
+---
+
+## What is this?
+
+A single-file interactive explainer that auto-plays through six tabs, each covering a key dimension of OpenClaw:
+
+| Tab | What it covers | Read time |
+|-----|---------------|-----------|
+| **The problem** | Why current AI chatbots fall short — they talk but don't act | 12s |
+| **Architecture** | Hub-and-spoke design: Gateway → Agent Runtime → LLM + Tools | 10s |
+| **Message flow** | The ReAct loop — how a single message becomes real action | 11s |
+| **Skills & tools** | Skills teach, tools execute — the modular capability system | 10s |
+| **How to run it** | Deployment options, install commands, cost breakdown | 9s |
+| **The catch** | Security trade-offs — power and risk from the same source | 10s |
+
+---
+
+## Features
+
+- **Auto-play** — tabs advance automatically with enough time to read each section
+- **Play/pause** — small toggle button to pause and resume at any point
+- **Manual navigation** — click any tab pill or "Next" button to jump around
+- **Mobile-first** — stacks to single column on phones, architecture diagram switches to vertical layout under 440px
+- **Dark mode** — auto-detects system preference via `prefers-color-scheme`
+- **Animated entry** — staggered fade-up, pop, and slide-in animations on every element
+- **Zero dependencies** — single HTML file, no build step, no external libraries
+- **Lightweight** — ~34KB HTML, ~200KB GIF
+
+---
+
+## Files
