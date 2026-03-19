@@ -35,3 +35,80 @@ A single-file interactive explainer that auto-plays through six tabs, each cover
 ---
 
 ## Files
+
+    ├── openclaw_animated_explainer.html   # Interactive explainer (open in any browser)
+    ├── openclaw_explainer.gif             # Animated GIF version (8s per slide, loops forever)
+    └── README.md                          # This file
+
+---
+
+## Usage
+
+### View in browser
+
+Just open the HTML file:
+
+    open openclaw_animated_explainer.html
+
+### Embed in a website
+
+    <iframe
+      src="openclaw_animated_explainer.html"
+      width="100%"
+      height="700"
+      style="border: none; border-radius: 12px;"
+    ></iframe>
+
+### Share the GIF
+
+The `openclaw_explainer.gif` is a self-contained animated GIF (750×694px, 8 seconds per slide, infinite loop). Drop it into:
+
+- LinkedIn posts
+- WhatsApp / Telegram messages
+- Notion pages
+- Slide decks
+- Email newsletters
+
+---
+
+## How it was built
+
+Built entirely through conversation with [Claude](https://claude.ai/) (Anthropic) using:
+
+- **Research** — Web search to understand OpenClaw's architecture, skills system, security model, and deployment patterns from official docs, Wikipedia, and technical deep-dives
+- **Design** — Mobile-first responsive HTML/CSS with CSS custom properties for light/dark theming, CSS keyframe animations, and no JavaScript frameworks
+- **Auto-play engine** — Pure JS setTimeout loop with play/pause state management
+- **Architecture diagram** — Responsive SVG with two layout modes (horizontal for desktop, vertical for mobile) detected at render time
+- **GIF generation** — Playwright headless browser capturing each tab as PNG, then Pillow combining frames into an animated GIF
+
+---
+
+## OpenClaw in a nutshell
+
+**OpenClaw** is a free, open-source (MIT) AI agent created by Peter Steinberger. It runs on your machine (Mac, Windows, or Linux) and connects to chat apps you already use — WhatsApp, Telegram, Slack, Discord, Signal, iMessage, and more.
+
+Unlike chatbots that just respond to prompts, OpenClaw **executes real tasks**: clearing your inbox, managing your calendar, deploying code, running shell commands, automating workflows — all through a single persistent assistant accessible from any messaging platform.
+
+**Key facts:**
+
+- 310,000+ GitHub stars, 58,000+ forks, 1,200+ contributors
+- Model-agnostic: works with Claude, GPT, or local models via Ollama
+- 2,800+ community skills on ClawHub
+- Costs $0 for software (MIT license), $10–70/month for LLM API usage
+- NVIDIA announced NemoClaw integration at GTC 2026
+
+**The trade-off:** The same full-machine access that makes it powerful also makes it a security consideration. Always review third-party skills, sandbox the agent, and restrict permissions.
+
+---
+
+## Credits
+
+- **OpenClaw** — [openclaw.ai](https://openclaw.ai/) | [GitHub](https://github.com/openclaw/openclaw)
+- **Explainer created by** — [Anuj Magazine](https://www.linkedin.com/in/anujmagazine/) / [AI&Beyond](https://www.aiandbeyond.in/)
+- **Built with** — [Claude](https://claude.ai/) by Anthropic
+
+---
+
+## License
+
+This explainer is shared for educational and informational purposes. OpenClaw is MIT-licensed. The explainer content and design are original work.
