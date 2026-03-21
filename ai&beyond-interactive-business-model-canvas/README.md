@@ -4,6 +4,7 @@ An interactive, click-to-explore Business Model Canvas for [AI&Beyond](https://a
 
 🔗 **[View Live →](https://YOUR_GITHUB_USERNAME.github.io/aiandbeyond-bmc/)**
 
+View: https://claude.ai/public/artifacts/8f4f2976-531a-447b-b19e-b98ecf21d198
 ---
 
 ### What is this?
